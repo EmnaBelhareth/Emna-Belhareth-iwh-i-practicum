@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 Update Custom Object Form
+    a(href="/") Return to the homepage
+    form(action="/update-cobj" method="POST")
+      div
+        label Name:
+        input(type="text" name="plant_name" required)
+      div
+        label Type:
+        input(type="text" name="type" required)
+      div
+        label Family:
+        input(type="text" name="family" required)
+      div
+        label Growth Stage:
+        input(type="text" name="growthstage" required)
+      div
+        button(type="submit") Submit

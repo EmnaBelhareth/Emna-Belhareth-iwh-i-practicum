@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 Plants List
+    a(href="/update-cobj") Add/Update this table
+    table(border="1")
+      tr
+        th Name
+        th Type
+        th family
+        th Growth Stage 
+      each plant in data
+        tr
+          td= plant.properties.plant_name
+          td= plant.properties.type
+          td= plant.properties.family
+          td= plant.properties.growthstage
+         
+       
